@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trang chu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugin/ckeditor/ckeditor.js"></script>
+    <link href="plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header-page ">
+        <div class="row" style="width: 100%">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                 </button>
+            <div class="col-md-2">
+
+                <h3 class=" title-page">
+
+                    <a href="index.html"><img src="images/logo-1.png" alt="logo"></a>
+                </h3>
+            </div>
+            <div class=" col-md-7" id="search">
+                <section id="search">
+                    <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i></label>
+                    <input id="search-input" class="form-control input-lg" placeholder="Tìm kiếm " autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
+                    <a id="search-clear" href="#" class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">Clear search</span></a>
+                </section>
+            </div>
+            <div class="col-md-3 clearfix ">
+                <section class="sale-icon">
+                    <a href="#"><i class="fa fa-cart-plus pull-right  cart-shop " aria-hidden="true"><span class="badge">7</span></i></a>
+                    <a href="#"> <i class="fa fa-shopping-bag pull-right  bag-shop" aria-hidden="true"></i></a>
+                </section>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="col-md-offset-1">
+            <nav class=" navbar navbar-inverse nav-custom ">
+                <div class="collapse navbar-collapse " id="myNavbar">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="active-choice"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                        <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Đặt hàng</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp; Kho sách 
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 1-1</a></li>
+                                <li><a href="#">Page 1-2</a></li>
+                                <li><a href="#">Page 1-3</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Liên hệ</a></li>
+                    </ul>
+
+
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="page/nguoidung/login.html" class="login" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
+                    </ul>
+
+                </div>
+
+
+
+            </nav>
+
+        </div>
+        <!--end-->
+    </div>
+    <div class="container-fluid main-page">
+        <div class="content-page">
+            <!--<div class="banner">
+                    <h1>Mua sách online </h1>
+                    <h3>Hàng ngàn cuốn sách chất lượng với nhiều loại và mẫu mã khác nhau</h3>
+                    <label>
+                        <span>
+                            Sách đang hot
+                        </span>
+                    </label>
+                </div>
+                <div class="col-md-offset-2 col-md-8 content-book-salest">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3  ">
+                            <div class="thumbnail thumbnail-book">
+
+                                <div class="image-logo">
+                                    <img src="images/conan.png" alt="img1">
+                                </div>
+                                <div class="caption">
+                                    <h1>Thám tử lừng danh Conan</h1>
+                                    <p>Giá : 12.000<sup>đồng</sup></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3  ">
+                            <div class="thumbnail thumbnail-book">
+
+                                <div class="image-logo">
+                                    <img src="images/conan.png" alt="img1">
+                                </div>
+                                <div class="caption">
+                                    <h1>Thám tử lừng danh Conan</h1>
+                                    <p>Giá : 12.000<sup>đồng</sup></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3  ">
+                            <div class="thumbnail thumbnail-book">
+
+                                <div class="image-logo">
+                                    <img src="images/conan.png" alt="img1">
+                                </div>
+                                <div class="caption">
+                                    <h1>Thám tử lừng danh Conan</h1>
+                                    <p>Giá : 12.000<sup>đồng</sup></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3  ">
+                            <div class="thumbnail thumbnail-book">
+
+                                <div class="image-logo">
+                                    <img src="images/conan.png" alt="img1">
+                                </div>
+                                <div class="caption">
+                                    <h1>Thám tử lừng danh Conan</h1>
+                                    <p>Giá : 12.000<sup>đồng</sup></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+            <div class="container-hot">
+                <h1>
+                    <span>
+                                    Sách hay mỗi ngày
+                                </span>
+                </h1>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-hot">
+                <h1>
+                    <span>
+                                    Sách hay mỗi ngày
+                                </span>
+                </h1>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-hot">
+                <h1>
+                    <span>
+                                    Sách bán chạy nhất
+                                </span>
+                </h1>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3  ">
+                        <div class="thumbnail thumbnail-book">
+
+                            <div class="image-logo">
+                                <img src="images/conan.png" alt="img1">
+                            </div>
+                            <div class="caption">
+                                <h1>Thám tử lừng danh Conan</h1>
+                                <p>Giá : 12.000<sup>đồng</sup>
+                                    <span>-12%</span>
+                                </p>
+                                <p>14.000</p>
+                            </div>
+                            <div class="buy-now">
+                                <ul>
+                                    <li>
+                                        <a href="#">Xem ngay</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thêm vào giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer-page">
+        <div class="row">
+            <div class=" col-md-offset-2 col-md-8">
+                <div class="col-xs-6 col-md-6 ">
+                    <h3>Danh mục </h3>
+                    <ul>
+                        <li>
+                            <a href="#">Đặt hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Kho sách</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <h3>Liên hệ </h3>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; +123456789 Support by Nhat</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy-right">
+            <a href="https://github.com/assignment1-ec/Assignment1">https://github.com/assignment1-ec/Assignment1</a>
+            <p>@2017 BK-Maker,Inc.All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
