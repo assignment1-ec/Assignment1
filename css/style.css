@@ -481,3 +481,49 @@ body {
 .add-question {
     color: mediumseagreen;
 }
+
+
+/*CSS Detail*/
+
+.content-page{
+    margin: 15px; 
+    border: .5px solid black;
+    background-color: #FAFAFA;
+    box-shadow: 5px 5px 2.5px #888888;
+}
+
+.view-detail{
+    
+}
+
+label{
+    margin: 10px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+#number{
+    width: 75px;
+}
+
+button{
+    margin: 20px;
+    height: 40px;
+    font-style: 1000;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#add-cart{
+    width: 250px;
+    background-color: #F79F81;
+    border-radius: 2px;
+}
+
+#buy-now{
+    width: 120px;
+    background-color: #81DAF5;
+}
+/*End CSS Detail*/
+
+
