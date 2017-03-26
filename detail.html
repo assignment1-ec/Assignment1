@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chi Tiet</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugin/ckeditor/ckeditor.js"></script>
+    <link href="plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Begin Header -->
+	<div class="header-page ">
+        <div class="row" style="width: 100%">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+            </button>
+            <div class="col-md-2">
+
+                <h3 class=" title-page">
+
+                    <a href="index.html"><img src="images/logo-1.png" alt="logo"></a>
+                </h3>
+            </div>
+            <div class=" col-md-7" id="search">
+                <section id="search">
+                    <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i></label>
+                    <input id="search-input" class="form-control input-lg" placeholder="Tìm kiếm " autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
+                    <a id="search-clear" href="#" class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">Clear search</span></a>
+                </section>
+            </div>
+            <div class="col-md-3 clearfix ">
+                <section class="sale-icon">
+                    <a href="#"><i class="fa fa-cart-plus pull-right  cart-shop " aria-hidden="true"><span class="badge">7</span></i></a>
+                    <a href="#"> <i class="fa fa-shopping-bag pull-right  bag-shop" aria-hidden="true"></i></a>
+                </section>
+            </div>
+		</div>
+        <div class="col-md-offset-1">
+            <nav class=" navbar navbar-inverse nav-custom ">
+                <div class="collapse navbar-collapse " id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="active-choice"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                        <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Đặt hàng</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp; Kho sách 
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Page 1-1</a></li>
+                                <li><a href="#">Page 1-2</a></li>
+                                <li><a href="#">Page 1-3</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Liên hệ</a></li>
+                    </ul>
+
+
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="page/nguoidung/login.html" class="login" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--End Header-->
+
+    <!-- Begin Conttent -->
+        <div class="container-fluid main-page">
+        	<div class="content-page">
+        		<div class="row view-detail">
+	        		<div class="col-md-5 col-xs-12">
+	        			<div class="image-book"></div>
+	        		</div>
+	        		<div class="col-md-7 col-xs-12">
+	        			<div class="info-book">
+	        				<table>
+	        					<tr>
+	        						<h2 id="book-name">Thám tử lừng danh Conan - Tập 90</h2>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Tác giả: </label>
+	        						</td>
+	        						<td>
+	        							<label id = "author">Gosho Aoyama</label>
+	        						</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Nhà xuất bản: </label>
+	        						</td>
+	        						<td>
+	        							<label id="publisher">Nhà xuất bản Kim Đồng</label>
+	        						</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Năm xuất bản: </label>
+	        						</td>
+	        						<td>
+	        							<label id="year-publishing">2016</label>
+	        						</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Tái bản: </label>
+	        						</td>
+	        						<td>
+	        							<label id="year-republishing">2017</label>
+	        						</td>
+	        					</tr>
+	        					<tr>
+		        					<td>
+		        						<label>Giá: </label>	
+		        					</td>
+		        					<td>
+		        						<label id="price">12.000</label>
+		        						<h8> VND</h8>
+		        					</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Trọng lượng: </label>
+	        						</td>
+	        						<td>
+	        							<label id="weight">120</label>
+	        							<h8> gam</h8>
+	        						</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Số hiệu: </label>
+	        						</td>
+	        						<td>
+	        							<label id="ID-book">123445</label>
+	        						</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<label>Số lượng: </label>
+	        						</td>
+	        						<td>
+	        							<input id="number" type="number" name="" value="1" />
+	        						</td>
+	        					</tr>
+	        					<tr>
+	        						<td>
+	        							<button id="add-cart">Thêm vào giỏ hàng</button>
+	        						</td>
+	        						<td>
+	        							<button id="buy-now">Mua ngay</button>
+	        						</td>
+	        					</tr>
+	        				</table>
+	        			</div>
+	        		</div>
+        		</div>
+        		<div class="row description">
+        			<div class="container-hot">
+		                <h1>
+		                    <span>
+		                        Giới thiệu sách
+		                    </span>
+		                </h1>
+                		<div id="description-book">
+                			<a id="name-book" href="detail.html"><h4>Thám tử lừng danh Conan - Tập 90</h4></a>
+                			<label id="content-des">
+                				<p id="p1">
+                					Sự thật nào sẽ được làm sáng tỏ đằng sau mối bất hòa giữa hai con người phục vụ công lí ở hai vị thế khác nhau - mật vụ FBI Akai và cảnh sát Amuro!?
+                				</p>
+                				<p id="p2">
+                					Cuộc phiêu lưu mới sẽ đưa độc giả đến gần hơn với Tổ chức Áo Đen, tiết lộ mối quan hệ giữa Sera và “em gái ngoài lãnh địa”!!
+                				</p>
+                				<p id="p3">
+                					Cuối cùng, chuyện tình cảm giữa Heiji và Kazuha cũng có nhiều chuyển biến…!! Tóm lại là sau một thời gian gây bão, thám tử Conan tập 90 đã ấn định ngày phát hành: 24.02 trên toàn quốc!! Chúc các bạn một năm mới tưng bừng và hào hứng nhé…!!
+                				</p>
+                			</label>
+                		</div>
+            		</div>
+        		</div>
+        	</div>
+        </div>
+    <!-- End Content -->
+
+    <!-- Begin Footer -->
+	<div class="footer-page">
+	    <div class="row">
+	        <div class=" col-md-offset-2 col-md-8">
+	            <div class="col-xs-6 col-md-6 ">
+	                <h3>Danh mục </h3>
+	                <ul>
+	                    <li>
+	                        <a href="#">Đặt hàng</a>
+	                    </li>
+	                    <li>
+	                        <a href="#">Kho sách</a>
+	                    </li>
+	                    <li>
+	                        <a href="#">Liên hệ</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <div class="col-xs-6 col-md-6">
+	                <h3>Liên hệ </h3>
+	                <ul>
+	                    <li>
+	                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; +123456789 Support by Nhat</a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="copy-right">
+	        <a href="https://github.com/assignment1-ec/Assignment1">https://github.com/assignment1-ec/Assignment1</a>
+	        <p>@2017 BK-Maker,Inc.All Rights Reserved.</p>
+	    </div>
+	</div>
+    <!-- End Footer -->
+
+</body>
+</html>
