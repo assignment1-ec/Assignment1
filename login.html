@@ -89,41 +89,59 @@
         <!--end-->
     </div>
     <div class="container-fluid main-page">
-        <ul class="breadcrumb">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li>Chính sách đổi trả</li>
+        <div class="col-md-4 col-md-offset-4">
+            <div class="title-page text-center">
+                <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+            </div>
+            <ul class="nav nav-tabs tab-user">
+                <li class="active"><a data-toggle="tab" href="#signin"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
+                <li><a data-toggle="tab" href="#signup"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Đăng kí</a></li>
 
-        </ul>
-        <div class="content-page">
-            <h1>Đổi trả hàng dễ dàng với <strong>Swift-Book Shop</strong></h1>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Kể từ khi giao hàng</th>
-                            <th>Sản phẩm lỗi</th>
+            </ul>
+
+            <div class="tab-content">
+                <div id="signin" class="tab-pane fade in active">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tên đăng nhập" id="user-name">
+                            <input type="password" class="form-control" placeholder="Mật khẩu" id="user-pwd">
+                        </div>
+                        <div class="signin-button">
+                            <button type="button" class="btn btn-primary">Đăng nhập</button>
+                            <section class="clearfix">
+                                <div class="checkbox pull-left">
+                                    <label><input type="checkbox" value="">Nhớ mật khẩu</label>
+
+                                </div>
+
+                                <a href="forget_pass.html" class="pull-right">Quên mật khẩu ?</a>
+                            </section>
 
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Với các đơn hàng Online</td>
-                            <td>7 ngày</td>
-                            <td>Đổi mới Trả không thu phí</td>
+                        </div>
 
-                        </tr>
-                        <tr>
-                            <td>Các đơn hàng còn lại</td>
-                            <td>
-                                2 tuần
-                            </td>
-                            <td>Trả không thu phí</td>
 
-                        </tr>
-                    </tbody>
-                </table>
+                    </div>
+
+                </div>
+                <div id="signup" class="tab-pane fade">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Họ và tên" id="user-fullname">
+                            <input type="text" class="form-control" placeholder="Tên đăng nhập" id="user-name">
+                            <input type="email" class="form-control" placeholder="nhat@gmail.com" id="user-email">
+                            <input type="password" class="form-control" placeholder="Mật khẩu" id="user-pwd">
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" id="user-re-pwd">
+
+                        </div>
+                        <div class="signin-button">
+                            <button type="button" class="btn btn-primary">Đăng kí</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

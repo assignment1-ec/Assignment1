@@ -12,6 +12,7 @@
     <link href="plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main-style.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
 
 </head>
 
@@ -67,7 +68,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html" class="active-choice"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
                         <li><a href="doitra.html"><i class="fa fa-motorcycle" aria-hidden="true"></i>&nbsp;Chính sách đổi trả</a></li>
-                        <li><a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;Quy trình mua hàng</a></li>
+                        <li><a href="#" class="active-choice"><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;Quy trình mua hàng</a></li>
                         <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Hỗ trợ khách hàng</a></li>
                         <li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Thông tin công ty</a></li>
                     </ul>
@@ -91,40 +92,36 @@
     <div class="container-fluid main-page">
         <ul class="breadcrumb">
             <li><a href="index.html">Trang chủ</a></li>
-            <li>Chính sách đổi trả</li>
-
+            <li>Quy trình mua hàng</li>
         </ul>
-        <div class="content-page">
-            <h1>Đổi trả hàng dễ dàng với <strong>Swift-Book Shop</strong></h1>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Kể từ khi giao hàng</th>
-                            <th>Sản phẩm lỗi</th>
+        <div class="content-page transcript-bar">
+            <div class="col-md-3 ">
+                <div class="transcript-around">
+                    <h1>Thêm vào giỏ hàng</h1>
+                    <label><i class="fa fa-cart-plus" aria-hidden="true"></i></label>
+                </div>
 
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Với các đơn hàng Online</td>
-                            <td>7 ngày</td>
-                            <td>Đổi mới Trả không thu phí</td>
-
-                        </tr>
-                        <tr>
-                            <td>Các đơn hàng còn lại</td>
-                            <td>
-                                2 tuần
-                            </td>
-                            <td>Trả không thu phí</td>
-
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+            <div class="col-md-3 ">
+                <div class="transcript-around">
+                    <h1>Kiểm tra đơn hàng</h1>
+                    <label><i class="fa fa-money" aria-hidden="true"></i></label>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="transcript-around">
+                    <h1>Xác nhận thông tin</h1>
+                    <label><i class="fa fa-check-circle" aria-hidden="true"></i></label>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="transcript-around">
+                    <h1>Hoàn thành</h1>
+                    <label><i class="fa fa-shopping-bag" aria-hidden="true"></i></label>
+                </div>
+            </div>
+
         </div>
     </div>
     <div class="footer-page">
@@ -162,6 +159,7 @@
             <p>@2017 Swift-Book Shop.All Rights Reserved.</p>
         </div>
     </div>
+
 </body>
 
 </html>

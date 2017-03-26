@@ -364,7 +364,8 @@ body {
     width: 100%;
     margin: 0;
     min-height: 100px;
-    background-color: #3D4752;
+    background-image: url('../images/bg-header.png');
+    background-repeat: repeat;
     /*box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;*/
 }
 
