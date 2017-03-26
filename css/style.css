@@ -525,6 +525,22 @@ button{
     width: 120px;
     background-color: #81DAF5;
 }
+
 /*End CSS Detail*/
+
+/*CSS CART*/
+
+.item-book{
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+}
+
+#image-item{
+    width: 75px;
+    height: 100px;
+    margin: 5px;
+}
+/*END CSS CART*/
 
 
