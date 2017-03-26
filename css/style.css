@@ -497,7 +497,7 @@ body {
     
 }
 
-label{
+.info-book label{
     margin: 10px;
     font-style: oblique;
     font-weight: 600;
@@ -507,7 +507,7 @@ label{
     width: 75px;
 }
 
-button{
+.info-book button{
     margin: 20px;
     height: 40px;
     font-style: 1000;
@@ -534,12 +534,55 @@ button{
     border: 1px solid black;
     border-radius: 4px;
     background-color: #F2F2F2;
+    margin-top: 8px;
+}
+
+.info-item label{
+    margin-left: 10px;
+}
+
+#num{
+    width: 60px;
+}
+
+.other label{
+    margin: 10px;
+}
+.other button{
+    width: 100px;
+    height: 30px;
+    background-color: #DF0101;  
+    margin-top: 20px;
 }
 
 #image-item{
     width: 75px;
     height: 100px;
     margin: 5px;
+}
+
+.total-price{
+    border: .5px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #A9BCF5;
+}
+
+.total-price label{
+    margin: 5px;
+}
+
+#buy-now-2{
+    background-color: #FA5858;
+    width: 70%;
+    text-align: center;
+    height: 45px;
+    margin-left: 26px;
+    margin-top: 10px;
+}
+
+#other-2{
+    border-top: .5px solid black;
 }
 /*END CSS CART*/
 
