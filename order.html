@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dat hang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugin/ckeditor/ckeditor.js"></script>
+    <link href="plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main-style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <div class="header-page ">
+        <div style="width: 100%" class="row navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                 </button>
+            <div class="col-md-2">
+
+                <h3 class="title-page">
+                    <a href="index.html"><img src="images/logo2.png" alt="logo"></a>
+                </h3>
+            </div>
+            <div class="col-md-7">
+                <section id="search">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tất cả <span class="caret"></span> </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Tất cả</a></li>
+                            <li><a href="#">Văn học cổ điển</a></li>
+                            <li><a href="#">Toán học</a></li>
+                            <li><a href="#">Vật lý</a></li>
+                            <li><a href="#">Truyện dài</a></li>
+                            <li><a href="#">Mỹ thuật</a></li>
+                            <li><a href="#">Hóa học</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" id="btnSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input id="search-input" class="form-control input-lg" placeholder="Tìm kiếm " autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
+                    <a id="search-clear" href="#" class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">Clear search</span></a>
+                </section>
+            </div>
+            <div class="col-md-3 clearfix ">
+                <section class="sale-icon">
+                    <a href="#"><i class="fa fa-cart-plus pull-right  cart-shop " aria-hidden="true"><span class="badge">7</span></i></a>
+                    <a href="#"> <i class="fa fa-shopping-bag pull-right  bag-shop" aria-hidden="true"></i></a>
+                </section>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="col-md-offset-1">
+            <nav class=" navbar navbar-inverse nav-custom ">
+                <div class="collapse navbar-collapse " id="myNavbar">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="active-choice"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                        <li><a href="doitra.html"><i class="fa fa-motorcycle" aria-hidden="true"></i>&nbsp;Chính sách đổi trả</a></li>
+                        <li><a href="#" class="active-choice"><i class="fa fa-cart-plus" aria-hidden="true"></i>&nbsp;Quy trình mua hàng</a></li>
+                        <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i>&nbsp; Hỗ trợ khách hàng</a></li>
+                        <li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Thông tin công ty</a></li>
+                    </ul>
+
+
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="login.html" class="login" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
+                    </ul>
+
+                </div>
+
+
+
+            </nav>
+
+        </div>
+        <!--end-->
+    </div>
+    <!--End Header-->
+
+    <!-- Begin Conttent -->
+    <div class="container-fluid main-page">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li>Đặt hàng</li>
+        </ul>
+        <div class="content-page">
+            <div class="row">
+                <div class="col-md-8 col-xs-12">
+                    <div class="login-buy">
+                        <div class="title-buy">
+                            <h4 class="log-buy-title">ĐẶT HÀNG</h4>
+                        </div>
+                        <div class="info-customer">
+
+                            <!-- edit -->
+                            <div class="row">
+                                <div class="col-md-7 col-xs-12">
+                                    <div class="info-email">
+                                        <h4 class="title-customer">Chọn hình thức mua hàng (Đăng nhập tài khoản hoặc không đăng nhập)</h4>
+                                        <table>
+                                            <tr>
+                                                <td class="label-input-email">Xin vui lòng nhập Email: </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="textbox-input-email">
+                                                    <input type="text" id="user-email" placeholder="example@gmail.com" name="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="radio-check" id="user-no-register">
+                                                    <input type="radio" name="choose-login" checked="checked" id="no-register" name="">  Đặt hàng mà không cần đăng nhập<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="radio-check" id="user-register">
+                                                    <input type="radio" name="choose-login" id="register" name="">  Tôi đã có tài khoản tại Swift Book Store<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="textbox-input-pwd">
+                                                    <input type="password" placeholder="Vui lòng nhập mật khẩu" name="" id="pwd-user">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="lost-pwd"><a href="#getPwd.html">Quên mật khẩu?</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xs-12">
+                                    <div class="bonus">
+                                        <h4>Một số dịch vụ kèm theo</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- edit -->
+                            <div class="customer">
+                                <h4 class="title-customer">Thông tin của khách hàng </h4>
+                                <table>
+                                    <tr>
+                                        <td class="label-name">Tên: </td>
+                                        <td class="input-name">
+                                            <input type="text" placeholder="Họ & Tên" id="user-name" name="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-address">Nhập số nhà: </td>
+                                        <td class="input-address">
+                                            <textarea type="text" placeholder="Vui lòng điền chính xác tầng, số nhà, đường" name="" id="address" rows = "3"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-city">Tỉnh/Thành phố: </td>
+                                        <td class="input-city">
+                                            <select id="select-city">
+                                                <option value="hcm">Hồ Chí Minh</option>
+                                                <option value="long-an">Long An</option>
+                                                <option value="binh-duong">Bình Dương</option>
+                                                <option value="tien-giang">Cần Thơ</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-district">Quận/Huyện: </td>
+                                        <td class="input-district">
+                                            <select id="select-district">
+                                                <option value="1">Quận 1</option>
+                                                <option value="2">Quận 2</option>
+                                                <option value="3">Quận 3</option>
+                                                <option value="4">Quận 4</option>
+                                                <option value="binhthanh">Bình Thạnh</option>
+                                                <option value="govap">Gò vấp</option>
+                                                <option value="tanbinh">Tân Bình</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-wards">Phường/Xã: </td>
+                                        <td class="input-wards">
+                                            <select id="select-wards">
+                                                <option value="phuong-1">Phường 1</option>
+                                                <option value="phuong-2">Phường 2</option>
+                                                <option value="phuong-3">Phường 3</option>
+                                                <option value="phuong-4">Phường 4</option>
+                                                <option value="phuong-5">Phường 5</option>
+                                                <option value="phuong-6">Phường 6</option>
+                                                <option value="phuong-7">Phường 7</option>
+                                                <option value="phuong-8">Phường 8</option>
+                                                <option value="phuong-9">Phường 9</option>
+                                            </select>    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-phone">Số điện thoại: </td>
+                                        <td class="input-num-phone">
+                                            <input type="number" placeholder="Số điện thoại" id="phone-num" name="">
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="order-button">
+                                    <button class="button-ord">Tiếp tục >></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="detail-order">
+                        <form>
+                            <h4 class="ord-title">
+                                Thông tin đơn hàng
+                                <span>(2 sản phẩm)</span>
+                            </h4>
+                            <div class="ord-main">
+                                <table class="order-header">
+                                    <tr>
+                                        <th class="left-align">SẢN PHẨM</th>
+                                        <th class="qty">SỐ LƯỢNG</th>
+                                        <th class="right-align">GIÁ</th>
+                                    </tr>
+                                </table>
+                                <table class="order-main">
+                                    <tr>
+                                        <td class="left-align-1">Thám tử lừng danh Conan - Tập 89</td>
+                                        <td class="qty-1">1</td>
+                                        <td class="right-align-1">12.000<span> VND</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left-align-1">Thám tử lừng danh Conan - Tập 90</td>
+                                        <td class="qty-1">1</td>
+                                        <td class="right-align-1">12.000<span> VND</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left-align-1">Bao bìa sách</td>
+                                        <td class="qty-1">2</td>
+                                        <td class="right-align-1">6.000 <span> VND</span></td>
+                                    </tr>
+                                </table>
+                                <table class="order-footer">
+                                    <tr class="ord-sub-total">
+                                        <td class="left-align-2">Tạm tính</td>
+                                        <td class="right-align-2">30.000<span> VND</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left-align-2">+ 10% VAT</td>
+                                        <td class="right-align-2">3000<span> VND</span></td>
+                                    </tr>
+                                    <tr class="ord-total">
+                                        <td class="left-align-2">Thành tiền</td>
+                                        <td class="right-align-2">33.000<span> VND</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer-page">
+        <section>
+            <div class=" col-md-offset-2 col-md-8">
+                <div class="col-xs-6 col-md-6 ">
+                    <h3>Danh mục </h3>
+                    <ul>
+                        <li>
+                            <a href="#">Đặt hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Kho sách</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <h3>Liên hệ </h3>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp; +123456789 Support by Nhat</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="copy-right">
+            <a href="https://github.com/assignment1-ec/Assignment1">https://github.com/assignment1-ec/Assignment1</a>
+            <p>@2017 Swift-Book Shop.All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
