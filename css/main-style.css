@@ -614,3 +614,134 @@ body {
 .image-book .icon-small div img {
     border: 0;
 }
+
+
+/*---------------user manager---------------*/
+
+.user-bar {
+    width: 100%;
+}
+
+.user-panel .user-fullname {
+    border: 0;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 0;
+    font-size: 25px;
+}
+
+.user-panel #edit-fullname {
+    margin-top: 36px;
+    border: 0;
+    background-color: transparent;
+}
+
+.user-panel #edit-fullname i {
+    font-size: 20px;
+    color: #08486B;
+}
+
+.user-panel .edit {
+    border-bottom: 2px solid #ccc;
+}
+
+.user-panel #avatar {
+    margin: 15px;
+}
+
+.user-panel .tab-content {
+    border: 0;
+}
+
+#userinfo .full-info label,
+#chang-pwd input {
+    font-weight: bold;
+}
+
+#userinfo .full-info table {
+    margin-top: 15px;
+}
+
+#userinfo .full-info table tr td,
+#chang-pwd table tr td {
+    text-align: right;
+    padding: 10px;
+}
+
+#userinfo #submit,
+#chang-pwd #submit-repwd {
+    width: 100%;
+}
+
+#userinfo .full-info input,
+#chang-pwd input {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+#history .item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0
+}
+
+#history button {
+    border: 0;
+    background: transparent;
+    margin: 30px;
+}
+
+#history h3 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #08486B;
+}
+
+#history button i {
+    font-size: 25px;
+    color: #1D9F75;
+}
+
+
+/*-----------------slider-------------*/
+
+.item-slider {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.item-slider img {
+    float: left;
+}
+
+.item-slider h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1D9F75;
+}
+
+.item-slider p {
+    font-style: italic;
+    quotes: "\201C" "\201D";
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control:hover {
+    opacity: 0;
+}
+
+.carousel-control i {
+    position: absolute;
+    top: 40%;
+}
+
+.carousel {
+    border: 0;
+    margin: 0;
+    box-shadow: 0;
+    margin-bottom: 30px;
+}

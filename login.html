@@ -107,7 +107,7 @@
                             <input type="password" class="form-control" placeholder="Mật khẩu" id="user-pwd">
                         </div>
                         <div class="signin-button">
-                            <button type="button" class="btn btn-primary">Đăng nhập</button>
+                            <button type="button" id="user-login" class="btn btn-primary">Đăng nhập</button>
                             <section class="clearfix">
                                 <div class="checkbox pull-left">
                                     <label><input type="checkbox" value="">Nhớ mật khẩu</label>
@@ -180,6 +180,11 @@
             <p>@2017 Swift-Book Shop.All Rights Reserved.</p>
         </div>
     </div>
+    <script>
+        $('#user-login').click(function() {
+            location.href = "index-had-login.html";
+        });
+    </script>
 </body>
 
 </html>

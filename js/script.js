@@ -25,3 +25,8 @@ $('.info-book .change-number button:last-child').click(function() {
     value = parseInt(value);
     $('.info-book .change-number #number').attr('value', value + 1);
 });
+
+$('.user-panel #edit-fullname').click(function() {
+    $('.user-panel #user-fullname').attr('readonly', false);
+    $('.user-panel #user-fullname').addClass('edit');
+});
