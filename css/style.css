@@ -506,6 +506,12 @@ body {
     width: 75px;
 }
 
+.customer,
+.bonus,
+.info-email {
+    padding-top: 10px;
+}
+
 .info-book button {
     margin: 20px;
     height: 40px;
@@ -586,6 +592,214 @@ body {
 #other-2 {
     border-top: .5px solid black;
 }
+
+
+/*CSS ORDER*/
+
+.login-buy {
+    border: 1px solid #E6E6E6;
+    border-radius: 1.5px;
+}
+
+.title-customer {
+    margin-left: 10px;
+}
+
+.title-buy {
+    border-bottom: 1px solid #E6E6E6;
+    background-color: #F2F2F2;
+}
+
+.title-buy>h4 {
+    margin: 0px;
+    padding: 10px;
+    font-size: 100%;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.log-buy-title {
+    font-size: 120%;
+    margin-left: 20px;
+}
+
+.info-email>h4,
+.customer>h4,
+.bonus>h4 {
+    font-size: 110%;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 20px;
+}
+
+.info-email>table {
+    margin: auto;
+}
+
+.label-input-email {
+    font-weight: bold;
+    text-align: left;
+}
+
+tr>td {
+    padding: 4px;
+}
+
+#user-email,
+#pwd-user {
+    width: 260px;
+    height: 30px;
+}
+
+.lost-pwd {
+    text-align: right;
+}
+
+.customer {
+    margin-top: 10px;
+}
+
+.label-name,
+.label-address,
+.label-city,
+.label-district,
+.label-wards,
+.label-phone {
+    font-weight: 600;
+}
+
+.customer>table {
+    margin-left: 70px;
+}
+
+#phone-num,
+#select-wards,
+#select-district,
+#select-city,
+#address,
+#user-name {
+    width: 260px;
+    height: 30px;
+}
+
+#address {
+    height: 80px;
+}
+
+.button-ord {
+    margin: 40px 185px;
+    width: 200px;
+    height: 40px;
+    background-color: #FE642E;
+    border-radius: 5px;
+}
+
+.detail-order {
+    border: 1px solid #E6E6E6;
+    border-radius: 1.5px;
+}
+
+form {
+    background-color: #F2F2F2;
+}
+
+.detail-order form>h4 {
+    margin: 0;
+    font-size: 100%;
+}
+
+.ord-title {
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+.left-align {
+    text-align: left;
+    width: 220px;
+}
+
+.qty {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+    width: 120px;
+}
+
+.left-align,
+.qty,
+.right-align {
+    padding: 5px;
+}
+
+.ord-main>table {
+    border: 1px solid #E6E6E6;
+}
+
+table>tr {
+    margin: 10px;
+}
+
+.order-header {
+    font-size: 80%;
+    font-family: verdana;
+    font-weight: normal;
+}
+
+.order-main {
+    background-color: #FFFFFF;
+}
+
+.left-align-1 {
+    text-align: left;
+    width: 220px;
+}
+
+.qty-1 {
+    text-align: center;
+    width: 60px;
+}
+
+.right-align-1 {
+    text-align: right;
+    width: 120px;
+}
+
+.left-align-1,
+.qty-1,
+.right-align-1 {
+    padding: 10px;
+}
+
+.left-align-2 {
+    width: 220px;
+    text-align: left;
+}
+
+.right-align-2 {
+    width: 180px;
+    text-align: right;
+}
+
+.left-align-2,
+.right-align-2 {
+    padding: 10px;
+}
+
+.ord-total>.left-align-2 {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.ord-total>.right-align-2 {
+    font-weight: bold;
+    font-size: 160%;
+    color: #FE2E2E;
+}
+
+
+/*END CSS ODDER*/
 
 
 /*END CSS CART*/
