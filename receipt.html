@@ -92,17 +92,21 @@
 
     <!-- Begin Conttent -->
     <div class="container-fluid main-page">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li>Thông tin thanh toán</li>
+        </ul>
         <div class="content-page">
             <div class="recript">
                 <div class="row info-receiver">
-                    <h4 class="title-receipt">Địa chỉ giao hàng/ Thanh toán  <a class="back-order" href="#order.html">Chỉnh sửa</a></h4>
+
                     <hr>
                     <div class="info-1">
                         <label class="name-receiver"> Nguyễn Văn A</label><br>
                         <label class="address-receiver">248 Lý Thường Kiệt</label><br>
                         <label class="city-receiver">Hồ Chí Minh</label> <span> - </span> <label class="district-receiver">Quận 10</label> <span> - </span><label class="wards-receiver">Phường 14</label><br>
                         <label>Điện thoại di động:</label><span>  </span><label class="phone-num">01644431222</label><br>
-                    </div>                  
+                    </div>
                 </div>
                 <div class="row info-receipt">
                     <h4 class="title-receipt">Thông tin đơn hàng <span>(3 sản phẩm)</span></h4>
@@ -137,12 +141,12 @@
                 <div class="row date-ship">
                     <h4 class="title-receipt">Thông tin giao hàng</h4>
                     <hr>
-                    <input type="radio" name="ship" checked="checked" id="free-ship" name="">  Giao hàng miễn phí (3 - 5 ngày kể từ ngày đặt hàng)<br>
-                    <input type="radio" name="ship" id="fee-ship" name="">  Giao hàng nhanh 10.000 VND (2 ngày kể từ ngày đặt hàng)<br>
+                    <input type="radio" name="ship" checked="checked" id="free-ship" name=""> Giao hàng miễn phí (3 - 5 ngày kể từ ngày đặt hàng)<br>
+                    <input type="radio" name="ship" id="fee-ship" name=""> Giao hàng nhanh 10.000 VND (2 ngày kể từ ngày đặt hàng)<br>
                 </div>
                 <div class="row total-receipt">
                     <label class="total-rec">Tổng hóa đơn (bao gồm VAT + vận chuyển): </label><label class="num-money">43.000<span> VND</span></label><br>
-                    <button class="btn btn-primary btn-confirm">Xác nhận đơn hàng</button>
+                    <button class="btn btn-primary btn-confirm  btn-nhat" id="submit">Xác nhận đơn hàng</button>
                 </div>
             </div>
         </div>
@@ -187,6 +191,11 @@
     </div>
     <!-- End Footer -->
     <script src="js/script.js">
+    </script>
+    <script>
+        $('#submit').click(function() {
+            location.href = "notify.html";
+        });
     </script>
 </body>
 
