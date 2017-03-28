@@ -745,3 +745,29 @@ body {
     box-shadow: 0;
     margin-bottom: 30px;
 }
+
+
+/*-----------------cart---------------*/
+
+.item-book {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+#image-item {
+    margin: 15px;
+}
+
+.list-book {
+    border: 1px solid #ccc;
+}
+
+.total-price {
+    border: 0;
+}
+
+#buy-now-2 {
+    background-color: #1D9E74;
+}
