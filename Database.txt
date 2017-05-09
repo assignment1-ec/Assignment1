@@ -1,0 +1,55 @@
+----------------------------------
+| @Name: Database Table
+| @Author: RamDieu
+----------------------------------
+| List all of database tables for Ass2 (EC)
+|
+|Ghi chú: dấu // được xem là chú thích (comment) or loại bỏ
+|
+------------BOOK
+1.Book Type // Loại sách (sách học sinh, toán, sinh ...)
+    id, name, description, order, created_date, updated_date
+2. Books
+   id, name,is_published, price, short_description, long_description, icon (default_icon),
+   author, publisher, published_date, republished_date, weight, isbn,
+   language, book_type_id, is_old, created_at, updated_at.
+
+3. Discount Books
+   id, book_id, discount_percent, discount_price, start_date, end_date
+
+4. Book Images
+    id, book_id, image_url, created_at, updated_at.
+//5. Book Review
+//    id, content, user_id, rating, created_at, updated_at.
+
+6. Book Management
+ id, book_id, count
+
+7. Book Categories // Top sach, sach ban chay nha, sach mới phát hành
+    id, name, description, order //(thứ tự)
+     // bỏ created_at, updated_at để đơn giản
+8. Category Books
+    id, category_id, book_id, date
+    // bỏ created_at, updated_at
+
+------------- Cart
+2. Cart Book
+    user_id, book_id, added_date, number
+
+---------- Order
+1. Orders
+    id, name, user_id, is_paid, date, trans_status, user_address, user_phone_number, total_price
+        is_paid: 0 for chưa thanh toán, 1 đã thanh toán
+        trans_status: 0 (Chưa vận chuyển), 1 (Đang vận chuyện), 2 (Đã giao)
+1. Order Books
+    order_id, book_id, count //, vat, vat_percent
+
+---------- User
+1. User
+ id, fullname, username, email, password, status, created_date, updated_date, avatar, phone_number,
+  status: 0 for not yet activated, 1 activated, 2 block
+  //(password đã dùng)
+
+//2. buying_history (// k cần tạo, dùng bảng orders)
+//   id, user_id, order_id
+
